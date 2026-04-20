@@ -5,6 +5,11 @@ import java.io.File;
  */
 public class FileLister {
 
+    /**
+     * Recursively lists all files and directories starting from the given file/directory and appends their paths to the output.
+     * @param file The starting file or directory to list.
+     * @param output The StringBuilder to which the file paths will be appended.
+     */
     public static void listFiles(File file, StringBuilder output) {
         if (file == null || !file.exists()) {
             return;

@@ -14,6 +14,9 @@ public class RecursiveListerGUI extends JFrame {
     private JButton quitButton;
     private JPanel buttonPanel;
 
+    /**
+     * Constructor to set up the GUI components and event listeners.
+     */
     public RecursiveListerGUI() {
         setTitle("Recursive File Lister");
         setSize(800, 600);
@@ -46,6 +49,10 @@ public class RecursiveListerGUI extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Opens a directory chooser dialog, and if a directory is selected, lists all files and directories recursively in
+     * the output area.
+     */
     private void chooseDirectoryAndListFiles() {
         String projectPath = System.getProperty("user.dir");
 
